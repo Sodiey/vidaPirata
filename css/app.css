@@ -1,0 +1,313 @@
+/* DEBUGER*/
+.debug {
+  color: hsla(210, 100%, 100%, 0.88) !important;
+  background: hsla(210, 100%, 50%, 0.33) !important;
+  outline: 0.25rem solid hsla(210, 100%, 100%, 0.5) !important;
+  border: 2px solid black !important;
+}
+
+/*ROOT*/
+html,* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto Mono, monospace;
+}
+h1,
+h2,
+h3,
+h4,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h2,
+h3,
+h6 {
+  text-align: center;
+}
+/* GENERAL*/
+#toArtist {
+  width: 100%;
+  height: 8vh;
+  margin-top: -6vh;
+}
+#toAbout {
+  width: 100%;
+  height: 8vh;
+  margin-top: -7vh;
+}
+
+a {
+  text-decoration: none;
+  color: #d4d4d4;
+}
+h1 {
+  font-family: "Miltonian Tattoo", cursive;
+}
+h2 {
+  font-size: 50px;
+  font-family: "Miltonian Tattoo", cursive;
+  position: relative;
+  top: 40%;
+}
+h3 {
+  font-size: 28px;
+  letter-spacing: 0.2rem;
+}
+h4 {
+  font-size: 22px;
+  color: white;
+  letter-spacing: 0.2rem;
+  z-index: 10;
+}
+h6 {
+  color: white;
+}
+
+/*HOVER*/
+.artist p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  border-color: #a0a0a0;
+  width: 35px;
+  height:35px;
+}
+
+/*HEADER*/
+header {
+  background-color: #161719;
+  height: 8vh;
+  color: #d4d4d4;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 4vw;
+  height: 7vh;  
+  border-radius: 30%;
+  margin-right: 18px;
+}
+.nav-link {
+  width: 35%;
+}
+.nav-link ul {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style-type: none;
+}
+.fas {
+  transform: scale(1.8);
+}
+
+
+/*            MAIN      */
+
+
+/*HOME PAGE*/
+#home {
+  width: 100%;
+  height: 100vh;
+}
+
+.banner {
+  background-image: url(../img/scetch.jpeg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 101%;
+  background-size: cover;
+  background-position: center;
+}
+
+/*  ABOUT */
+#about {
+  height: 100%;
+  background-color: #0A0E11;
+}
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 2.7fr 1fr;
+  grid-template-rows: 0.7fr 4fr 0.6fr 3fr 0.6fr;
+}
+.grid-item {
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+  font-size: 1.1vw;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.about-left {
+  width: 23vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-left img {
+  width: 100%;
+  height: 95%
+}
+.about-right {
+  width: 30vw;
+  color:#8f8f8f;
+  height: 100%;
+}
+
+
+.about-right h4 {
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 20px;
+}
+.about-right h5 {
+  color: #b8b8b8;
+}
+.about-btn {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.about-btn button {
+  font-size: 0.8em;
+  padding: 0.7em;
+  border: none;
+  margin-right: 1em;
+  background-color: black;
+  color:#888888;
+  border-color: white;
+}
+button:nth-child(2) {
+  background-color: #BF9457;
+  color:#000;
+  
+}
+
+/*SERVICES*/
+.grid-item-second {
+  grid-row: 4/5 ;
+  grid-column: 2/3;
+  
+}
+.service-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.service-item {
+  text-align: center;
+  padding: 10px;
+}
+.service-item img {
+  width: 40px;
+  box-sizing: content-box;
+  padding: 7px;
+  border: 2px solid #BF9457;
+  border-radius: 50%;
+}
+
+.grid-item-second h3 {
+  color: white;
+  margin-bottom: 1.6em;
+}
+.service-item p {
+  color: #8f8f8f;
+  font-size: 0.8em;
+}
+.service-item h6 {
+  font-size: 0.9em;
+  margin: 1.5em;
+  color: #dbdada;
+}
+
+
+
+/*ARTISTS*/
+#artists {
+  height: 100%;
+  padding-top: 9px;
+}
+.artist-container {
+  width: 100%;
+  height: 74vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+.artist {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.overlay {
+  display: block;
+  position: absolute;
+  background-color: #1d1918;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.artist1 {
+  background-image: url("../img/dino.jpg");
+}
+.artist2 {
+  background-image: url("../img/dodos.jpg");
+}
+.artist3 {
+  background-image: url("../img/mpanis.jpg");
+  background-position: -5vw;
+}
+.artist p {
+  color: #b6350e;
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 10;
+}
+.icons {
+  transform: scale(1.4);
+}
+.arrow {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 3px solid #8a7d78;
+  border-right: 3px solid #8a7d78;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+}
+.arrow-right {
+  transform: rotate(-45deg);
+  right: 22px;
+}
+.arrow-left {
+  transform: rotate(-225deg);
+  left: 20px;
+}
+
+/*EVENTS*/
+#events div {
+  background-color: #1d1918;
+  padding: 20px;
+  color: white;
+}
