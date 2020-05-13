@@ -1,1 +1,1 @@
-This is MY project
+Tattoo studio Project
